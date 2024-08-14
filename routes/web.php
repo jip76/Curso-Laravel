@@ -1,6 +1,7 @@
 <?php
-
+use App\Http\Controllers\Dasbohard\CategoryController;
 use App\Http\Controllers\Dasbohard\PostController;
+use App\Models\Category;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ Route::get('/', function () {
 });
 
 Route::resource('post',PostController::class);
+Route::resource('category',CategoryController::class);
